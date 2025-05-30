@@ -6,15 +6,15 @@ import (
 )
 
 type CoreLib struct {
-	request  request.IRequest
-	response response.IResponse
+	Request  request.IRequest
+	Response response.IResponse
 }
 
 func InitializeCoreLib() *CoreLib {
 	request := request.InitializeRequest()
 	response := response.InitializeResponse()
 	return &CoreLib{
-		request:  request,
-		response: response,
+		Request:  request,
+		Response: response,
 	}
 }
